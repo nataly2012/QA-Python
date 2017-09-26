@@ -44,3 +44,54 @@ import math
 # 	print("Yes, triangle exists ")
 # else:
 # 	print("No, triangle does not exist")
+
+
+
+# text = input("Enter text here:")
+# if text=="Hi":
+#     print("Wellcome")
+
+
+# number=int(input("Set number:"))
+# if 0<number<=100:
+#     print("Correct number")
+# else:
+#     print("Incorrect number")
+
+#
+# text=(input ("What is your name?:"))
+# sub=' '
+# sub2="."
+# if sub in text:
+#     print("Привет " + str(text) + " в вашем имени " + str(text.count(sub,0,len(text)))+" пробел")
+# elif sub2 in text:
+#     print("Привет " + str(text) + " в вашем имени " + str(text.count(sub2, 0, len(text))) + " точки")
+# else:
+#     print("Привет " + str(text) + " в вашем имени нет точек и пробелов")
+
+
+# a=179
+# b=971
+# c = math.sqrt(a**2+b**2)
+# print (str(c))
+
+# num = input("Введите число:")
+# if len(num)==2:
+#     print ("Ваше число содержит "+ str(num[0])+" дестяков")
+# elif len(num)==3:
+#     n=int(num)
+#     a=n%10
+#     n=n//10
+#     b=n%10
+#     n=n//10
+#     c=n%10
+#     print("Cумма цифр числа " + str(a+b+c))
+
+
+
+# num=input("print number:")
+# n=int(num)
+# if n%2==0:
+#     print(str(n+2))
+# else:
+#     print(str(n+1))
