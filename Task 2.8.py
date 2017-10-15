@@ -8,13 +8,15 @@ def song (a = 3, b = 3,c = 0):
     word = "la"
     st = ((word + "-")* b)
 
-    if c==0:
-        print ((str(st)+ "\n") *a,end = ".")
-    elif c == 1:
-        print ((str(st)+ "\n") *a, end = "!")
-    else:
-        print ((str(st)+ "\n") *a, end = " ")
+    row = ((st[0:-1])+ "\n") *a
 
-song(3,6,0)
+    if c==0:
+        return (str(row[0:-1])+".")
+    elif c == 1:
+        return (str(row[0:-1])+"!")
+    else:
+        return str(row[0:-1])
+
+print(song(3,6,1))
 
 
