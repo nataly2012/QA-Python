@@ -13,15 +13,15 @@ class Dot:
     def difference(self, a, b):
         dif1 = a - figure2.a
         dif2 = b - figure2.b
-        return dif1, dif2
+        return (dif1**2 + dif2**2)**0.5
 
 
 figure1 = Dot()
 print(figure1.begin(-10,20))
 
 figure2 = Dot()
-figure2.a = 8
-figure2.b = 12
+figure2.a = 5
+figure2.b = 10
 
 print(figure1.difference(10,20))
 
