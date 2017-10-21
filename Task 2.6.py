@@ -5,15 +5,16 @@
 
 def triangle(a,b,c):
     if a + b > c and a + c > b and b + c > a:
-        print("triangle exists")
-    elif a == b != c or a == c != b or b == c != a:
-         print ("Isosceles triangle")
-    elif a == b == c:
-         print ("Equilateral triangle")
-    elif a != b != c and b != c:
-         print ("Versatile triangle")
+        if a == b != c or a == c != b or b == c != a:
+            return "Isosceles triangle"
+        elif a == b == c:
+            return "Equilateral triangle"
+        elif a != b != c and b != c:
+            return "Versatile triangle"
+        else:
+            return "Not a triangle"
     else:
-        print ("Not a triangle")
+        return "No triangle exists"
 
 res = triangle(5,0,5)
 print (res)
