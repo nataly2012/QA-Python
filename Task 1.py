@@ -19,6 +19,7 @@ else:
     print("Привет " + str(text) + " в вашем имени нет точек и пробелов")
 
 
+
 #Task 1.4
 
 text="Homework"
