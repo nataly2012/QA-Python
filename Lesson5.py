@@ -1,0 +1,10 @@
+f = open('text.txt', 'w')
+f.write("Hallo world")
+f.close()
+
+f1=open("text2.txt", "w")
+f1.write("Hall world, I'm here" '\n')
+f1.close()
+f1=open("text2.txt",'w+')
+m=f1.read()
+print(m)
