@@ -6,5 +6,14 @@ text = " Rain, rain, go away.\n Come again another day.\n Little girl wants to p
 f1.write(text)
 f1.close()
 f1= open('text1.txt')
-m = f1.read()
-print(m)
+print(f1.read())
+
+f = open('text1.txt')
+with open('text2.txt', 'w') as f2:
+    b=1
+    for line in f:
+        f2.write(str(b) + ': ' + line)
+        b+=1
+f2.close()
+f2=open('text2.txt')
+print(f2.read())
